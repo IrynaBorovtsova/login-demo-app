@@ -1,0 +1,37 @@
+{
+  "name": "postbuzzDemo",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-cookies": "~1.5.3",
+    "angular-touch": "~1.5.3",
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.5.3",
+    "oauth-js": "oauth.io#~0.5.2",
+    "font-roboto": "~0.0.2",
+    "font-awesome": "fontawesome#~4.6.3",
+    "json-formatter": "~0.6.0",
+    "bootstrap-sass": "~3.3.5",
+    "bootstrap": "~3.3.6",
+    "angular-resource": "~1.5.5",
+    "ng-notify": "~0.8.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.3"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap.min.css"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "~1.5.3"
+  }
+}

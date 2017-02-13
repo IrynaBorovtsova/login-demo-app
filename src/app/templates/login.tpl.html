@@ -1,0 +1,22 @@
+<div class="wrapper flex-container">
+  <div class="text-center">
+    <h1>Meld je aan bij Postbuzz</h1>
+    <span>via</span>
+    <div>
+      <button class="btn btn-primary" ng-click="formctrl.connect('facebook')"><i class="fa fa-facebook fa-fw"></i>Facebook</button>
+      <button class="btn btn-info" ng-click="formctrl.connect('twitter')"><i class="fa fa-twitter fa-fw"></i>Twitter</button>
+    </div>
+    <span>of via je e-mail & paswoord</span>
+    <div>
+      <form class="margin-top-10" name="form" ng-submit="formctrl.login(form)" novalidate>
+        <input type="email" name="email" ng-class="{'submitted': formctrl.submitted}" ng-model="formctrl.username" placeholder="E-mailadres" required />
+        <input type="password" name="password" ng-class="{'submitted': formctrl.submitted}" ng-model="formctrl.password" placeholder="Paswoord" required />
+        <button class="btn btn-link margin-clear" ng-click="formctrl.forgotPassword($event)"><i class="fa fa-angle-right fa-fw"></i>paswoord vergeten?</button>
+        <div class="form-group">
+          <button class="btn btn-success"><i class="fa fa-angle-right fa-fw"></i>Bevestig</button>
+          <button class="btn btn-transparent-grey" ng-click="formctrl.reset($event, form)"><i class="fa fa-times fa-fw"></i>Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
